@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>whiteBackground</key>
+	<string>#1d1d1d</string>
+	<key>textLabel</key>
+	<string>#FFFFFF</string>
+	<key>textFieldBackground</key>
+	<string>#323232</string>
+	<key>pink</key>
+	<string>#c4537e</string>
+	<key>blue</key>
+	<string>#5561cc</string>
+	<key>lightGray</key>
+	<string>#FFFFFF</string>
+	<key>paleGray</key>
+	<string>#1d1d1d</string>
+	<key>lightPink</key>
+	<string>#1d1d1d</string>
+	<key>almostWhite</key>
+	<string>#1d1d1d</string>
+	<key>TabBar</key>
+	<dict>
+		<key>selectedColor</key>
+		<string>#c4537e</string>
+		<key>selectedTextColor</key>
+		<string>#c4537e</string>
+		<key>unSelectedColor</key>
+		<string>#FFFFFF</string>
+		<key>unSelectedTextColor</key>
+		<string>#FFFFFF</string>
+	</dict>
+	<key>NavBar</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>#1d1d1d</string>
+		<key>textColor</key>
+		<string>#FFFFFF</string>
+		<key>font</key>
+		<dict>
+			<key>weight</key>
+			<string>bold</string>
+			<key>size</key>
+			<integer>19</integer>
+			<key>font</key>
+			<string>Lato</string>
+		</dict>
+		<key>BarButton</key>
+		<dict>
+			<key>font</key>
+			<dict>
+				<key>weight</key>
+				<string>bold</string>
+				<key>size</key>
+				<integer>19</integer>
+				<key>font</key>
+				<string>Lato</string>
+			</dict>
+			<key>textColor</key>
+			<string>#FFFFFF</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

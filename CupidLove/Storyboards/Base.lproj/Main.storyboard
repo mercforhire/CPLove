@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1gG-Fp-HFo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Home Tab Bar View Controller-->
+        <scene sceneID="fyu-BI-6nf">
+            <objects>
+                <tabBarController storyboardIdentifier="UserHomeTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="1gG-Fp-HFo" customClass="UserHomeTabBarViewController" customModule="CupidLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="q2N-tE-GtZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <color key="selectedImageTintColor" systemColor="systemPinkColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ki4-6r-dif" kind="relationship" relationship="viewControllers" id="lq2-S6-pfn"/>
+                        <segue destination="Qcu-1q-DLo" kind="relationship" relationship="viewControllers" id="bMC-2g-TIf"/>
+                        <segue destination="eVN-fn-MKq" kind="relationship" relationship="viewControllers" id="hS5-Lo-aSD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcv-Z2-DUM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="-375"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Zg1-Zy-P9l">
+            <objects>
+                <navigationController title="Home" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="ki4-6r-dif" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="0Tz-0h-e4D"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x07-58-YFS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JaV-U9-S6l">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="ROp-gx-ra1" kind="relationship" relationship="rootViewController" id="I1c-8y-La2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJF-73-cVM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="423"/>
+        </scene>
+        <!--UserRootViewController-->
+        <scene sceneID="bzd-mY-MlV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExploreUser" referencedIdentifier="UserRootViewController" id="ROp-gx-ra1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aCW-t0-uHc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Im-Ur-SjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-125" y="832"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="AxB-HY-AcL">
+            <objects>
+                <navigationController title="Chat" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="Qcu-1q-DLo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" image="ellipsis.bubble" catalog="system" id="DZA-Ut-Iig"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DlX-Cm-Foa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SSW-l4-4oO" kind="relationship" relationship="rootViewController" id="Q2U-gO-2ZC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqx-N7-c5D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="423"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="KCO-HV-8iJ">
+            <objects>
+                <navigationController title="Profile" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="eVN-fn-MKq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="Hac-P0-EWD"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jyt-rt-XlZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="naP-3j-uiU" kind="relationship" relationship="rootViewController" id="4gP-NG-utC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWP-ja-JYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="423"/>
+        </scene>
+        <!--ChatHomeViewController-->
+        <scene sceneID="ZGu-WG-fb4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="ChatHomeViewController" id="SSW-l4-4oO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GCz-4q-0S7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5C-go-wei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="832"/>
+        </scene>
+        <!--MyProfileUserViewController-->
+        <scene sceneID="5YK-57-CtN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyProfiles" referencedIdentifier="MyProfileUserViewController" id="naP-3j-uiU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gki-Nj-9yH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ye5-lZ-aHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1535" y="824"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ellipsis.bubble" catalog="system" width="128" height="110"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

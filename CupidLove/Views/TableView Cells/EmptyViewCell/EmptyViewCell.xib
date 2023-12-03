@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="372" id="KGk-i7-Jjw" customClass="EmptyViewCell" customModule="CupidLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="561" height="372"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="561" height="372"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ta8-4l-xmp" userLabel="Container">
+                        <rect key="frame" x="0.0" y="50" width="561" height="272"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h58-h3-UDu">
+                                <rect key="frame" x="166.5" y="0.0" width="228" height="272"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustration_face" translatesAutoresizingMaskIntoConstraints="NO" id="m1U-He-O3m" customClass="ThemeBlackImageView" customModule="CupidLove" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="228"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="m1U-He-O3m" secondAttribute="height" multiplier="1:1" id="Ouw-TH-4hU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="254" verticalCompressionResistancePriority="754" text="No results to show" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jjk-pk-6G2" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="248" width="228" height="24"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="h58-h3-UDu" secondAttribute="bottom" id="FV0-Pw-EgL"/>
+                            <constraint firstItem="h58-h3-UDu" firstAttribute="centerX" secondItem="Ta8-4l-xmp" secondAttribute="centerX" id="HJf-av-UTS"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h58-h3-UDu" secondAttribute="trailing" id="R2u-wZ-jAL"/>
+                            <constraint firstItem="h58-h3-UDu" firstAttribute="top" secondItem="Ta8-4l-xmp" secondAttribute="top" id="ZVW-kl-Tl3"/>
+                            <constraint firstItem="h58-h3-UDu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ta8-4l-xmp" secondAttribute="leading" id="gn9-nY-TZV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ta8-4l-xmp" secondAttribute="trailing" id="7Cj-db-Ld9"/>
+                    <constraint firstItem="Ta8-4l-xmp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="D0S-ST-VYB"/>
+                    <constraint firstAttribute="bottom" secondItem="Ta8-4l-xmp" secondAttribute="bottom" constant="50" id="e02-fB-keE"/>
+                    <constraint firstItem="Ta8-4l-xmp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qBV-lY-j3f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="iconView" destination="m1U-He-O3m" id="3K8-CD-0Jd"/>
+                <outlet property="titleLabel" destination="Jjk-pk-6G2" id="izZ-3H-Gql"/>
+            </connections>
+            <point key="canvasLocation" x="158.69565217391306" y="158.70535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="illustration_face" width="365.5" height="365"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

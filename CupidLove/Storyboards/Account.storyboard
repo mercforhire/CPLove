@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="32M-u4-LMX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aclonica-Regular.ttf">
+            <string>Aclonica-Regular</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Profile-->
+        <scene sceneID="rhh-Zm-HFs">
+            <objects>
+                <tableViewController storyboardIdentifier="AccountViewController" title="My Profile" id="nBz-Ed-sTh" customClass="AccountViewController" customModule="CupidLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zaS-65-SLt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DatingBecomeVIPCell" id="q34-lk-iWo" customClass="DatingBecomeVIPCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q34-lk-iWo" id="wPJ-KC-cDZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustration_myaccount" translatesAutoresizingMaskIntoConstraints="NO" id="71x-OA-3UP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                            <color key="backgroundColor" red="0.76862745099999996" green="0.32549019610000002" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="180" id="hp1-XK-5dJ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-KG-Zwh">
+                                            <rect key="frame" x="0.0" y="27" width="414" height="126"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="You’re on our free plan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2k-N9-Je4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="28"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to make the most out of CP LOVE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbd-jL-iyh">
+                                                    <rect key="frame" x="0.0" y="38" width="414" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgj-6t-GXm">
+                                                    <rect key="frame" x="0.0" y="68.5" width="414" height="10"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="10" id="cNL-gb-sO1"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WqK-ek-q2g">
+                                                    <rect key="frame" x="0.0" y="88.5" width="414" height="37.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aC-yJ-ZpT">
+                                                            <rect key="frame" x="135" y="0.0" width="144" height="37.5"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="37.5" id="aPa-nu-KMK"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Upgrade to VIP">
+                                                                <color key="titleColor" red="0.76862745099999996" green="0.32549019610000002" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4aC-yJ-ZpT" secondAttribute="trailing" constant="20" id="9XT-ni-rUU"/>
+                                                        <constraint firstAttribute="bottom" secondItem="4aC-yJ-ZpT" secondAttribute="bottom" id="Sdt-MC-8eZ"/>
+                                                        <constraint firstItem="4aC-yJ-ZpT" firstAttribute="centerX" secondItem="WqK-ek-q2g" secondAttribute="centerX" id="TFu-Y8-sOD"/>
+                                                        <constraint firstItem="4aC-yJ-ZpT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WqK-ek-q2g" secondAttribute="leading" constant="20" id="oFq-jc-Xd9"/>
+                                                        <constraint firstItem="4aC-yJ-ZpT" firstAttribute="top" secondItem="WqK-ek-q2g" secondAttribute="top" id="unr-EO-5R0"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gEy-KG-Zwh" firstAttribute="leading" secondItem="wPJ-KC-cDZ" secondAttribute="leading" id="2Zi-vV-d88"/>
+                                        <constraint firstItem="71x-OA-3UP" firstAttribute="leading" secondItem="wPJ-KC-cDZ" secondAttribute="leading" id="EuI-vP-YAs"/>
+                                        <constraint firstAttribute="trailing" secondItem="gEy-KG-Zwh" secondAttribute="trailing" id="SvS-go-R8u"/>
+                                        <constraint firstAttribute="trailing" secondItem="71x-OA-3UP" secondAttribute="trailing" id="UK9-hi-oyl"/>
+                                        <constraint firstAttribute="bottom" secondItem="71x-OA-3UP" secondAttribute="bottom" id="Yhm-wy-Wfz"/>
+                                        <constraint firstItem="gEy-KG-Zwh" firstAttribute="centerX" secondItem="wPJ-KC-cDZ" secondAttribute="centerX" id="mOJ-Xf-s5N"/>
+                                        <constraint firstItem="71x-OA-3UP" firstAttribute="top" secondItem="wPJ-KC-cDZ" secondAttribute="top" id="nph-2j-Oyx"/>
+                                        <constraint firstItem="gEy-KG-Zwh" firstAttribute="centerY" secondItem="wPJ-KC-cDZ" secondAttribute="centerY" id="zsw-MX-n4C"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="upgradeButton" destination="4aC-yJ-ZpT" id="DvX-DN-8Vj"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CupidBecomeVIPCell" id="Co1-3j-ZEp" customClass="CupidBecomeVIPCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="224.5" width="414" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Co1-3j-ZEp" id="qZc-qv-iiN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustration_bluemyaccount" translatesAutoresizingMaskIntoConstraints="NO" id="FAb-ox-psa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                            <color key="backgroundColor" red="0.76862745099999996" green="0.32549019610000002" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="180" id="1Or-Ml-8rI"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WJ3-wy-SKc">
+                                            <rect key="frame" x="0.0" y="27" width="414" height="126"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="You’re on our free plan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpg-jL-6ZT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="28"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="23"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to make the most out of CP LOVE?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6z-bY-6bX">
+                                                    <rect key="frame" x="0.0" y="38" width="414" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzC-aV-KZY">
+                                                    <rect key="frame" x="0.0" y="68.5" width="414" height="10"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="10" id="ak7-Fd-alN"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTR-co-wNJ">
+                                                    <rect key="frame" x="0.0" y="88.5" width="414" height="37.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ea-6k-4Kv">
+                                                            <rect key="frame" x="135" y="0.0" width="144" height="37.5"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="37.5" id="RKa-rF-MO5"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                            <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Upgrade to VIP">
+                                                                <color key="titleColor" systemColor="systemIndigoColor"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="0Ea-6k-4Kv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iTR-co-wNJ" secondAttribute="leading" constant="20" id="6rm-Aw-2gD"/>
+                                                        <constraint firstItem="0Ea-6k-4Kv" firstAttribute="centerX" secondItem="iTR-co-wNJ" secondAttribute="centerX" id="Fsf-Ph-UKa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0Ea-6k-4Kv" secondAttribute="bottom" id="SiT-JU-dND"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Ea-6k-4Kv" secondAttribute="trailing" constant="20" id="VjV-3l-h9c"/>
+                                                        <constraint firstItem="0Ea-6k-4Kv" firstAttribute="top" secondItem="iTR-co-wNJ" secondAttribute="top" id="Vzp-ax-7hg"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FAb-ox-psa" firstAttribute="leading" secondItem="qZc-qv-iiN" secondAttribute="leading" id="3OX-JU-Cg9"/>
+                                        <constraint firstItem="WJ3-wy-SKc" firstAttribute="centerX" secondItem="qZc-qv-iiN" secondAttribute="centerX" id="96j-Ab-ER3"/>
+                                        <constraint firstItem="FAb-ox-psa" firstAttribute="top" secondItem="qZc-qv-iiN" secondAttribute="top" id="Pdy-lK-x6e"/>
+                                        <constraint firstAttribute="trailing" secondItem="WJ3-wy-SKc" secondAttribute="trailing" id="X9F-tq-zfa"/>
+                                        <constraint firstItem="WJ3-wy-SKc" firstAttribute="centerY" secondItem="qZc-qv-iiN" secondAttribute="centerY" id="Z6S-i6-WS7"/>
+                                        <constraint firstAttribute="trailing" secondItem="FAb-ox-psa" secondAttribute="trailing" id="beb-Pb-nLr"/>
+                                        <constraint firstItem="WJ3-wy-SKc" firstAttribute="leading" secondItem="qZc-qv-iiN" secondAttribute="leading" id="cL8-av-WB6"/>
+                                        <constraint firstAttribute="bottom" secondItem="FAb-ox-psa" secondAttribute="bottom" id="xBL-K1-6Da"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="upgradeButton" destination="0Ea-6k-4Kv" id="HQQ-dK-qfS"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountAvatarCell" id="jc2-e0-Nxi" customClass="AvatarLabelCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="404.5" width="414" height="190"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jc2-e0-Nxi" id="Mbh-yZ-Paw">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BeA-fQ-8SM">
+                                            <rect key="frame" x="25" y="30" width="364" height="160"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irP-2Y-Jnf" customClass="AvatarImage" customModule="CupidLove" customModuleProvider="target">
+                                                    <rect key="frame" x="126.5" y="0.0" width="111" height="111"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="111" id="BuT-FO-9x0"/>
+                                                        <constraint firstAttribute="width" secondItem="irP-2Y-Jnf" secondAttribute="height" multiplier="1:1" id="ZmQ-t1-Chj"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Margot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aP-37-5fS">
+                                                    <rect key="frame" x="144.5" y="121" width="75.5" height="28"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="23"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2IU-aA-4DO">
+                                                    <rect key="frame" x="4" y="159" width="356" height="1"/>
+                                                    <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="cxO-ad-Rqa"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="BeA-fQ-8SM" firstAttribute="leading" secondItem="Mbh-yZ-Paw" secondAttribute="leading" constant="25" id="cSO-va-VPE"/>
+                                        <constraint firstAttribute="trailing" secondItem="BeA-fQ-8SM" secondAttribute="trailing" constant="25" id="elq-fp-Stn"/>
+                                        <constraint firstItem="BeA-fQ-8SM" firstAttribute="centerX" secondItem="Mbh-yZ-Paw" secondAttribute="centerX" id="p3F-g4-ORa"/>
+                                        <constraint firstItem="BeA-fQ-8SM" firstAttribute="top" secondItem="Mbh-yZ-Paw" secondAttribute="top" constant="30" id="xE4-Ef-xPe"/>
+                                        <constraint firstAttribute="bottom" secondItem="BeA-fQ-8SM" secondAttribute="bottom" id="zxq-qy-XgJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="avatarImage" destination="irP-2Y-Jnf" id="lNf-UQ-7WV"/>
+                                    <outlet property="nameLabel" destination="4aP-37-5fS" id="iPP-fn-6LH"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountSectionHeaderCell" id="R4s-l8-wnu" customClass="LabelTableCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="594.5" width="414" height="53"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R4s-l8-wnu" id="t6O-jd-Q0b">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgO-Ya-OsU" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                            <rect key="frame" x="31" y="15" width="352" height="23"/>
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="SgO-Ya-OsU" secondAttribute="trailing" constant="31" id="0fa-Kx-HBI"/>
+                                        <constraint firstAttribute="bottom" secondItem="SgO-Ya-OsU" secondAttribute="bottom" constant="15" id="58Y-nJ-reG"/>
+                                        <constraint firstItem="SgO-Ya-OsU" firstAttribute="top" secondItem="t6O-jd-Q0b" secondAttribute="top" constant="15" id="MVE-jW-oqs"/>
+                                        <constraint firstItem="SgO-Ya-OsU" firstAttribute="leading" secondItem="t6O-jd-Q0b" secondAttribute="leading" constant="31" id="QHs-go-CMF"/>
+                                        <constraint firstItem="SgO-Ya-OsU" firstAttribute="centerY" secondItem="t6O-jd-Q0b" secondAttribute="centerY" id="ml6-tv-1iM"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="headerLabel" destination="SgO-Ya-OsU" id="0wV-9x-qb4"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountRowCell" id="pLF-cA-BlG" customClass="LabelDividerTableCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="647.5" width="414" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pLF-cA-BlG" id="WoW-30-el8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEs-xl-x8b" customClass="ThemeRoundedBackView" customModule="CupidLove" customModuleProvider="target">
+                                            <rect key="frame" x="29" y="0.0" width="356" height="65"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ro-iY-LkD" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="22.5" width="336" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gV-N4-OAg">
+                                                    <rect key="frame" x="0.0" y="64" width="356" height="1"/>
+                                                    <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="wmh-qk-dCG"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.97999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="7ro-iY-LkD" firstAttribute="leading" secondItem="UEs-xl-x8b" secondAttribute="leading" constant="10" id="8OH-T1-A6b"/>
+                                                <constraint firstItem="7ro-iY-LkD" firstAttribute="centerY" secondItem="UEs-xl-x8b" secondAttribute="centerY" id="CVs-DT-HA3"/>
+                                                <constraint firstAttribute="trailing" secondItem="7ro-iY-LkD" secondAttribute="trailing" constant="10" id="Cgq-iN-bWe"/>
+                                                <constraint firstItem="7ro-iY-LkD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UEs-xl-x8b" secondAttribute="top" constant="15" id="F0L-JM-bl8"/>
+                                                <constraint firstAttribute="height" constant="65" id="HJB-bJ-uPa"/>
+                                                <constraint firstAttribute="bottom" secondItem="5gV-N4-OAg" secondAttribute="bottom" id="dhG-p8-nbK"/>
+                                                <constraint firstAttribute="trailing" secondItem="5gV-N4-OAg" secondAttribute="trailing" id="o0Q-Ug-3yw"/>
+                                                <constraint firstItem="5gV-N4-OAg" firstAttribute="leading" secondItem="UEs-xl-x8b" secondAttribute="leading" id="q8O-Sm-mIQ"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7ro-iY-LkD" secondAttribute="bottom" constant="15" id="zQh-Yz-PLO"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="UEs-xl-x8b" secondAttribute="trailing" constant="29" id="GWx-jC-czl"/>
+                                        <constraint firstAttribute="bottom" secondItem="UEs-xl-x8b" secondAttribute="bottom" id="VDS-tM-2Fz"/>
+                                        <constraint firstItem="UEs-xl-x8b" firstAttribute="leading" secondItem="WoW-30-el8" secondAttribute="leading" constant="29" id="g2f-zk-Ldj"/>
+                                        <constraint firstItem="UEs-xl-x8b" firstAttribute="top" secondItem="WoW-30-el8" secondAttribute="top" id="sKi-LV-ks7"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="divider" destination="5gV-N4-OAg" id="gbC-fh-3v3"/>
+                                    <outlet property="label" destination="7ro-iY-LkD" id="1kT-J8-nwO"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeparatorCell" id="GiP-pF-xrG" customClass="SeparatorCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="712.5" width="414" height="18"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GiP-pF-xrG" id="sM2-94-HmA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lee-Dv-HtJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="yeN-zA-g0T"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Lee-Dv-HtJ" firstAttribute="top" secondItem="sM2-94-HmA" secondAttribute="top" id="1hD-Zj-TtG"/>
+                                        <constraint firstAttribute="trailing" secondItem="Lee-Dv-HtJ" secondAttribute="trailing" id="QLD-K4-MTO"/>
+                                        <constraint firstAttribute="bottom" secondItem="Lee-Dv-HtJ" secondAttribute="bottom" id="WO7-Mq-OzW"/>
+                                        <constraint firstItem="Lee-Dv-HtJ" firstAttribute="leading" secondItem="sM2-94-HmA" secondAttribute="leading" id="khb-hE-Qxw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nBz-Ed-sTh" id="pfB-at-2Pu"/>
+                            <outlet property="delegate" destination="nBz-Ed-sTh" id="aU3-6B-IU2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Profile" id="8my-0o-iVj">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="txi-zE-zeg" customClass="ThemeBarButton" customModule="CupidLove" customModuleProvider="target">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backPressed:" destination="nBz-Ed-sTh" id="IEA-vG-inb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="sfe-ey-bIo" kind="show" identifier="goToSettings" id="t1M-6o-x7v"/>
+                        <segue destination="bVb-GV-wdQ" kind="show" identifier="goToMyBlacklist" id="acG-5b-XWK"/>
+                        <segue destination="YK3-BG-mY6" kind="show" identifier="goToMyLikes" id="QTT-qG-2UX"/>
+                        <segue destination="hbr-5S-yZN" kind="show" identifier="goToPromotionCode" id="Z7y-7f-hhr"/>
+                        <segue destination="sXi-gj-lv8" kind="show" identifier="goToFeedback" id="Bep-wz-kfY"/>
+                        <segue destination="F38-kS-IMt" kind="show" identifier="goToInvite" id="f2v-f2-VcG"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCU-uz-ZCZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091.304347826087" y="-388.39285714285711"/>
+        </scene>
+        <!--Account Setting-->
+        <scene sceneID="8Nr-Gs-CLS">
+            <objects>
+                <tableViewController storyboardIdentifier="SettingsViewController" title="Account Setting" id="sfe-ey-bIo" customClass="SettingsViewController" customModule="CupidLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="MYX-Hy-iBl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountSectionHeaderCell" id="zkV-q1-LlC" customClass="LabelTableCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="53"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zkV-q1-LlC" id="T3r-6Q-Hdp">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JO1-dl-aPw" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                            <rect key="frame" x="31" y="15" width="352" height="23"/>
+                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="JO1-dl-aPw" firstAttribute="leading" secondItem="T3r-6Q-Hdp" secondAttribute="leading" constant="31" id="8E1-4Y-Gfg"/>
+                                        <constraint firstItem="JO1-dl-aPw" firstAttribute="centerY" secondItem="T3r-6Q-Hdp" secondAttribute="centerY" id="Pdc-9Z-Prq"/>
+                                        <constraint firstAttribute="bottom" secondItem="JO1-dl-aPw" secondAttribute="bottom" constant="15" id="aG4-kw-uS6"/>
+                                        <constraint firstAttribute="trailing" secondItem="JO1-dl-aPw" secondAttribute="trailing" constant="31" id="g3x-cf-HFT"/>
+                                        <constraint firstItem="JO1-dl-aPw" firstAttribute="top" secondItem="T3r-6Q-Hdp" secondAttribute="top" constant="15" id="pmE-4h-lEP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="headerLabel" destination="JO1-dl-aPw" id="4V0-dq-bdj"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountRowCell" id="7Vf-s4-4E1" customClass="LabelDividerTableCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="97.5" width="414" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Vf-s4-4E1" id="EAB-XS-Lbg">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnA-Gs-3tC" customClass="ThemeRoundedBackView" customModule="CupidLove" customModuleProvider="target">
+                                            <rect key="frame" x="29" y="0.0" width="356" height="65"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uv6-eV-8iP" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="22.5" width="336" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvx-4u-Ed4">
+                                                    <rect key="frame" x="0.0" y="64" width="356" height="1"/>
+                                                    <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="R9m-LP-WTr"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.97999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="uv6-eV-8iP" secondAttribute="trailing" constant="10" id="FRc-4S-2UZ"/>
+                                                <constraint firstItem="uv6-eV-8iP" firstAttribute="centerY" secondItem="bnA-Gs-3tC" secondAttribute="centerY" id="Qa8-Dn-605"/>
+                                                <constraint firstItem="uv6-eV-8iP" firstAttribute="leading" secondItem="bnA-Gs-3tC" secondAttribute="leading" constant="10" id="Wnd-53-JA9"/>
+                                                <constraint firstItem="hvx-4u-Ed4" firstAttribute="leading" secondItem="bnA-Gs-3tC" secondAttribute="leading" id="b84-ce-Dh0"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uv6-eV-8iP" secondAttribute="bottom" constant="15" id="cvQ-V6-7e0"/>
+                                                <constraint firstAttribute="trailing" secondItem="hvx-4u-Ed4" secondAttribute="trailing" id="kR6-8B-hay"/>
+                                                <constraint firstItem="uv6-eV-8iP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bnA-Gs-3tC" secondAttribute="top" constant="15" id="rm7-DK-3o1"/>
+                                                <constraint firstAttribute="height" constant="65" id="tDC-C3-bEH"/>
+                                                <constraint firstAttribute="bottom" secondItem="hvx-4u-Ed4" secondAttribute="bottom" id="uhF-B6-cTW"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="bnA-Gs-3tC" secondAttribute="trailing" constant="29" id="95i-x5-gqL"/>
+                                        <constraint firstItem="bnA-Gs-3tC" firstAttribute="leading" secondItem="EAB-XS-Lbg" secondAttribute="leading" constant="29" id="Ie1-HV-PFc"/>
+                                        <constraint firstItem="bnA-Gs-3tC" firstAttribute="top" secondItem="EAB-XS-Lbg" secondAttribute="top" id="c47-h8-Re2"/>
+                                        <constraint firstAttribute="bottom" secondItem="bnA-Gs-3tC" secondAttribute="bottom" id="qug-40-bG1"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="divider" destination="hvx-4u-Ed4" id="qro-If-7jh"/>
+                                    <outlet property="label" destination="uv6-eV-8iP" id="UKb-DX-8Iz"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeparatorCell" id="oYr-Ax-fLY" customClass="SeparatorCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="162.5" width="414" height="18"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oYr-Ax-fLY" id="MwP-h3-WRB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsY-yr-3sz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="KHW-Cy-26B"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="zsY-yr-3sz" secondAttribute="bottom" id="31x-dr-ceq"/>
+                                        <constraint firstAttribute="trailing" secondItem="zsY-yr-3sz" secondAttribute="trailing" id="9r6-OH-4nZ"/>
+                                        <constraint firstItem="zsY-yr-3sz" firstAttribute="leading" secondItem="MwP-h3-WRB" secondAttribute="leading" id="TCB-SD-a9t"/>
+                                        <constraint firstItem="zsY-yr-3sz" firstAttribute="top" secondItem="MwP-h3-WRB" secondAttribute="top" id="wBD-9d-sDo"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountSettingsRowCell" id="KnF-9Z-JGd" customClass="ToggleSettingssCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="180.5" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KnF-9Z-JGd" id="C8t-wh-LBo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlX-MT-VmT" customClass="ThemeRoundedBackView" customModule="CupidLove" customModuleProvider="target">
+                                            <rect key="frame" x="29" y="0.0" width="356" height="80"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4Q-5m-b9c">
+                                                    <rect key="frame" x="10" y="15" width="336" height="50"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rLW-wX-VXC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="290" height="50"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide my profile (VIP)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MS-Ad-2DD" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Others won't see you on homepage" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86r-Uh-i4o" customClass="ThemeGreyTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="20.5" width="290" height="29.5"/>
+                                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                                    <color key="textColor" red="0.73725490196078436" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuZ-3P-EQY">
+                                                            <rect key="frame" x="290" y="0.0" width="46" height="50"/>
+                                                            <subviews>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-Qs-mM0" customClass="ThemeSwitch" customModule="CupidLove" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="9.5" width="48" height="31"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="46" id="sMd-eE-8bR"/>
+                                                                    </constraints>
+                                                                </switch>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="hxf-Qs-mM0" firstAttribute="leading" secondItem="IuZ-3P-EQY" secondAttribute="leading" id="Q9z-Ib-hHu"/>
+                                                                <constraint firstItem="hxf-Qs-mM0" firstAttribute="centerY" secondItem="IuZ-3P-EQY" secondAttribute="centerY" id="i9e-df-gRK"/>
+                                                                <constraint firstAttribute="trailing" secondItem="hxf-Qs-mM0" secondAttribute="trailing" id="zow-yr-Opt"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjg-Ik-HuV">
+                                                    <rect key="frame" x="0.0" y="79" width="356" height="1"/>
+                                                    <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="DuB-1F-vRL"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.97999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="fjg-Ik-HuV" firstAttribute="leading" secondItem="mlX-MT-VmT" secondAttribute="leading" id="7Nm-dj-JAx"/>
+                                                <constraint firstAttribute="trailing" secondItem="z4Q-5m-b9c" secondAttribute="trailing" constant="10" id="901-LT-WnX"/>
+                                                <constraint firstItem="z4Q-5m-b9c" firstAttribute="top" secondItem="mlX-MT-VmT" secondAttribute="top" constant="15" id="G0N-as-aIM"/>
+                                                <constraint firstAttribute="trailing" secondItem="fjg-Ik-HuV" secondAttribute="trailing" id="J3b-HQ-rKb"/>
+                                                <constraint firstAttribute="bottom" secondItem="z4Q-5m-b9c" secondAttribute="bottom" constant="15" id="R1f-gO-eOL"/>
+                                                <constraint firstItem="z4Q-5m-b9c" firstAttribute="leading" secondItem="mlX-MT-VmT" secondAttribute="leading" constant="10" id="VPM-Zs-WSb"/>
+                                                <constraint firstAttribute="bottom" secondItem="fjg-Ik-HuV" secondAttribute="bottom" id="hKu-vS-lJe"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="mlX-MT-VmT" secondAttribute="trailing" constant="29" id="Ks3-qK-eVO"/>
+                                        <constraint firstItem="mlX-MT-VmT" firstAttribute="leading" secondItem="C8t-wh-LBo" secondAttribute="leading" constant="29" id="YPr-vs-TYO"/>
+                                        <constraint firstItem="mlX-MT-VmT" firstAttribute="top" secondItem="C8t-wh-LBo" secondAttribute="top" id="b8s-5W-y6A"/>
+                                        <constraint firstAttribute="bottom" secondItem="mlX-MT-VmT" secondAttribute="bottom" id="c0Z-VX-ra5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="bottomLabel" destination="86r-Uh-i4o" id="3Qq-Gb-67L"/>
+                                    <outlet property="divider" destination="fjg-Ik-HuV" id="hhC-ra-XoM"/>
+                                    <outlet property="toggleSwitch" destination="hxf-Qs-mM0" id="GKv-Dk-DAc"/>
+                                    <outlet property="topLabel" destination="5MS-Ad-2DD" id="xyJ-y5-6dV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sfe-ey-bIo" id="HcT-Qj-gxe"/>
+                            <outlet property="delegate" destination="sfe-ey-bIo" id="4wd-tc-H1n"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Account Setting" id="JXn-SJ-Ypj">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="bNS-oW-IXi" customClass="ThemeBarButton" customModule="CupidLove" customModuleProvider="target">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backPressed:" destination="sfe-ey-bIo" id="e52-kx-yQF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Clc-06-bHW" kind="show" identifier="goToPrivacy" id="pU3-Dn-8vS"/>
+                        <segue destination="qVc-8u-Tsh" kind="show" identifier="goToVerify" id="sSL-CS-dan"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdl-i5-5cZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942.0289855072465" y="-388.39285714285711"/>
+        </scene>
+        <!--VerifyProfileViewController-->
+        <scene sceneID="lFe-iE-1aQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Verify" referencedIdentifier="VerifyProfileViewController" id="qVc-8u-Tsh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UYp-eO-W1z"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ty6-E7-Tpi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2655" y="-388"/>
+        </scene>
+        <!--Privacy-->
+        <scene sceneID="FhI-G2-TNl">
+            <objects>
+                <viewController storyboardIdentifier="PrivacySettingsViewController" id="Clc-06-bHW" customClass="PrivacySettingsViewController" customModule="CupidLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0wd-Qz-3t5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rmg-Gb-jOp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNE-zg-NNa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="574.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fZ9-Le-fC9">
+                                                <rect key="frame" x="29" y="20" width="356" height="534.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Who do you want to be able to view your profile" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lji-e2-6D4" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="356" height="55.5"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="23"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jyX-bc-bUW">
+                                                        <rect key="frame" x="0.0" y="70.5" width="356" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ar-xJ-Y4f">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22" height="50"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IU2-0d-t3X" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                                        <rect key="frame" x="0.0" y="14" width="22" height="22"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="22" id="UO0-Tk-b5F"/>
+                                                                            <constraint firstAttribute="width" constant="22" id="mSv-PE-iOg"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="Circle"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="selection1CheckBoxChanged:" destination="Clc-06-bHW" eventType="valueChanged" id="NDj-Zd-ASC"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="IU2-0d-t3X" firstAttribute="leading" secondItem="8Ar-xJ-Y4f" secondAttribute="leading" id="BzH-aD-9lb"/>
+                                                                    <constraint firstItem="IU2-0d-t3X" firstAttribute="centerY" secondItem="8Ar-xJ-Y4f" secondAttribute="centerY" id="ZIA-by-l8u"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="IU2-0d-t3X" secondAttribute="trailing" id="rzl-ux-l29"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Everyone can view my profile." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qh4-1b-zxY" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                <rect key="frame" x="27" y="0.0" width="329" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DOk-8J-iQN">
+                                                        <rect key="frame" x="0.0" y="135.5" width="356" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tud-dQ-eGn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22" height="50"/>
+                                                                <subviews>
+                                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dve-BJ-YmV" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                                        <rect key="frame" x="0.0" y="14" width="22" height="22"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="22" id="Mvr-Ns-bbP"/>
+                                                                            <constraint firstAttribute="height" constant="22" id="a01-OE-SGt"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="Circle"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="_IBCheckState" value="Unchecked"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="selection1CheckBoxChanged:" destination="Clc-06-bHW" eventType="valueChanged" id="78U-cs-dvc"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="dve-BJ-YmV" firstAttribute="centerY" secondItem="Tud-dQ-eGn" secondAttribute="centerY" id="0GY-Wq-1Gn"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="dve-BJ-YmV" secondAttribute="trailing" id="KUT-0u-jX1"/>
+                                                                    <constraint firstItem="dve-BJ-YmV" firstAttribute="leading" secondItem="Tud-dQ-eGn" secondAttribute="leading" id="clB-rD-kkS"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No one is allowed to see my profile." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18e-Ym-rMz" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                <rect key="frame" x="27" y="0.0" width="329" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Do you want to receive CP Love push messages?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOa-Fh-lEK" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="200.5" width="356" height="55.5"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="23"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V5a-cB-o4h">
+                                                        <rect key="frame" x="0.0" y="271" width="356" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILT-RK-RzA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22" height="50"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wN-Vp-a1c" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                                        <rect key="frame" x="0.0" y="14" width="22" height="22"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="22" id="oa9-jx-F83"/>
+                                                                            <constraint firstAttribute="height" constant="22" id="uTi-Rh-Mgb"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="Circle"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="selection2CheckBoxChanged:" destination="Clc-06-bHW" eventType="valueChanged" id="ze4-u3-Xmg"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="6wN-Vp-a1c" firstAttribute="centerY" secondItem="ILT-RK-RzA" secondAttribute="centerY" id="7cc-pe-gcU"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="6wN-Vp-a1c" secondAttribute="trailing" id="Jh3-mi-whS"/>
+                                                                    <constraint firstItem="6wN-Vp-a1c" firstAttribute="leading" secondItem="ILT-RK-RzA" secondAttribute="leading" id="UcG-lq-QHP"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="I would like to receive notification messages." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSy-hq-pxS" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                <rect key="frame" x="32" y="0.0" width="324" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mA4-vc-g3H">
+                                                        <rect key="frame" x="0.0" y="336" width="356" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUx-dN-2n6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22" height="50"/>
+                                                                <subviews>
+                                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1W-O9-QQY" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                                        <rect key="frame" x="0.0" y="14" width="22" height="22"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="22" id="OSL-Gl-Nv6"/>
+                                                                            <constraint firstAttribute="width" constant="22" id="Rpi-bi-xvT"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="Circle"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="selection2CheckBoxChanged:" destination="Clc-06-bHW" eventType="valueChanged" id="JpK-Se-ooC"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="q1W-O9-QQY" firstAttribute="leading" secondItem="GUx-dN-2n6" secondAttribute="leading" id="Kau-tX-WKr"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="q1W-O9-QQY" secondAttribute="trailing" id="UlD-my-y1r"/>
+                                                                    <constraint firstItem="q1W-O9-QQY" firstAttribute="centerY" secondItem="GUx-dN-2n6" secondAttribute="centerY" id="wHo-XF-xSr"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="I don't want to receive system notifications." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHf-Fj-cvA" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                <rect key="frame" x="32" y="0.0" width="324" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u8t-XK-Ic4">
+                                                        <rect key="frame" x="0.0" y="401" width="356" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dH-XU-Mtp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22" height="50"/>
+                                                                <subviews>
+                                                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKh-OM-pDO" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                                        <rect key="frame" x="0.0" y="14" width="22" height="22"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="22" id="0jj-dg-rn4"/>
+                                                                            <constraint firstAttribute="width" constant="22" id="fmB-Ft-LDe"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="Circle"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="selection2CheckBoxChanged:" destination="Clc-06-bHW" eventType="valueChanged" id="wrS-BK-tpN"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="PKh-OM-pDO" firstAttribute="centerY" secondItem="9dH-XU-Mtp" secondAttribute="centerY" id="EUE-xZ-omH"/>
+                                                                    <constraint firstItem="PKh-OM-pDO" firstAttribute="leading" secondItem="9dH-XU-Mtp" secondAttribute="leading" id="ZWC-1f-JVj"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="PKh-OM-pDO" secondAttribute="trailing" id="jt1-Rz-ouw"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="I don't want to receive any Event / Marketing notification." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZQ-xe-21f" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                <rect key="frame" x="32" y="0.0" width="324" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="56F-lT-gWV">
+                                                        <rect key="frame" x="0.0" y="466" width="356" height="68.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOY-Ja-7HY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22" height="68.5"/>
+                                                                <subviews>
+                                                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncY-MQ-VU6" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                                        <rect key="frame" x="0.0" y="23.5" width="22" height="22"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="22" id="GZu-3e-phy"/>
+                                                                            <constraint firstAttribute="width" constant="22" id="jch-Qg-WQs"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="Circle"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="selection2CheckBoxChanged:" destination="Clc-06-bHW" eventType="valueChanged" id="gXg-Yl-KEk"/>
+                                                                        </connections>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="ncY-MQ-VU6" firstAttribute="centerY" secondItem="BOY-Ja-7HY" secondAttribute="centerY" id="cJq-0b-WM0"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="ncY-MQ-VU6" secondAttribute="trailing" id="mN4-6I-1i8"/>
+                                                                    <constraint firstItem="ncY-MQ-VU6" firstAttribute="leading" secondItem="BOY-Ja-7HY" secondAttribute="leading" id="xFg-rX-1Yh"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="I don't want to receive any notifications." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmJ-Ak-PEA" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                <rect key="frame" x="32" y="0.0" width="324" height="68.5"/>
+                                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fZ9-Le-fC9" firstAttribute="leading" secondItem="rNE-zg-NNa" secondAttribute="leading" constant="29" id="2x2-ht-SBQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="fZ9-Le-fC9" secondAttribute="bottom" constant="20" id="5HI-2h-TFg"/>
+                                            <constraint firstItem="fZ9-Le-fC9" firstAttribute="top" secondItem="rNE-zg-NNa" secondAttribute="top" constant="20" id="smU-Ev-0r3"/>
+                                            <constraint firstAttribute="trailing" secondItem="fZ9-Le-fC9" secondAttribute="trailing" constant="29" id="xuy-yr-KIk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rNE-zg-NNa" secondAttribute="trailing" id="7wG-np-QzS"/>
+                                    <constraint firstItem="rNE-zg-NNa" firstAttribute="leading" secondItem="Rmg-Gb-jOp" secondAttribute="leading" id="F6q-fc-Olr"/>
+                                    <constraint firstAttribute="bottom" secondItem="rNE-zg-NNa" secondAttribute="bottom" id="J0K-Ye-tzp"/>
+                                    <constraint firstItem="rNE-zg-NNa" firstAttribute="top" secondItem="Rmg-Gb-jOp" secondAttribute="top" id="iwh-TU-NvN"/>
+                                    <constraint firstItem="rNE-zg-NNa" firstAttribute="width" secondItem="Rmg-Gb-jOp" secondAttribute="width" id="oeY-Ng-k1I"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rFG-iX-7Ff"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rmg-Gb-jOp" firstAttribute="leading" secondItem="rFG-iX-7Ff" secondAttribute="leading" id="80A-6x-t8L"/>
+                            <constraint firstItem="Rmg-Gb-jOp" firstAttribute="top" secondItem="rFG-iX-7Ff" secondAttribute="top" id="Pgs-fS-Xjh"/>
+                            <constraint firstItem="rFG-iX-7Ff" firstAttribute="bottom" secondItem="Rmg-Gb-jOp" secondAttribute="bottom" id="TBu-M1-OBv"/>
+                            <constraint firstItem="rFG-iX-7Ff" firstAttribute="trailing" secondItem="Rmg-Gb-jOp" secondAttribute="trailing" id="Ztk-GO-fKt"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Privacy" id="JWP-jZ-wSd">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="yxI-dm-Lap" customClass="ThemeBarButton" customModule="CupidLove" customModuleProvider="target">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backPressed:" destination="Clc-06-bHW" id="gOo-bL-ZtZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outletCollection property="viewProfileCheckboxes" destination="IU2-0d-t3X" collectionClass="NSMutableArray" id="VTx-KQ-Wrb"/>
+                        <outletCollection property="viewProfileCheckboxes" destination="dve-BJ-YmV" collectionClass="NSMutableArray" id="15W-gy-yZr"/>
+                        <outletCollection property="receivePushCheckboxes" destination="6wN-Vp-a1c" collectionClass="NSMutableArray" id="j3q-zh-i9A"/>
+                        <outletCollection property="receivePushCheckboxes" destination="q1W-O9-QQY" collectionClass="NSMutableArray" id="FUv-mm-eig"/>
+                        <outletCollection property="receivePushCheckboxes" destination="PKh-OM-pDO" collectionClass="NSMutableArray" id="IEA-IA-yZb"/>
+                        <outletCollection property="receivePushCheckboxes" destination="ncY-MQ-VU6" collectionClass="NSMutableArray" id="Hdw-fJ-TeC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lI-JV-TBZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="396"/>
+        </scene>
+        <!--VIPPromotionCodeViewController-->
+        <scene sceneID="id3-3z-pmF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VIP" referencedIdentifier="VIPPromotionCodeViewController" id="hbr-5S-yZN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="SXU-8H-KJz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLN-t4-a6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="23"/>
+        </scene>
+        <!--My Blacklist-->
+        <scene sceneID="rbm-JD-MCZ">
+            <objects>
+                <tableViewController storyboardIdentifier="BlackListViewController" title="My Blacklist" id="bVb-GV-wdQ" customClass="BlackListViewController" customModule="CupidLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dnV-pe-c8g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlackListCell" id="iXY-P6-Ugw" customClass="BlackListCell" customModule="CupidLove" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="84"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iXY-P6-Ugw" id="QFc-Fw-3t4">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ly3-Oq-3xP">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="84"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emh-4q-DBj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="74" height="84"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syc-Ea-5Gg" customClass="AvatarImage" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="5" width="74" height="74"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="74" id="IlK-Uf-haC"/>
+                                                                <constraint firstAttribute="width" secondItem="syc-Ea-5Gg" secondAttribute="height" multiplier="1:1" id="Qq1-9B-yn8"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="syc-Ea-5Gg" firstAttribute="leading" secondItem="emh-4q-DBj" secondAttribute="leading" id="3og-Sb-Yzb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="syc-Ea-5Gg" secondAttribute="trailing" id="607-7o-rG4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="syc-Ea-5Gg" secondAttribute="bottom" constant="5" id="7LM-ba-W0T"/>
+                                                        <constraint firstItem="syc-Ea-5Gg" firstAttribute="top" secondItem="emh-4q-DBj" secondAttribute="top" constant="5" id="cdj-TR-0fF"/>
+                                                        <constraint firstItem="syc-Ea-5Gg" firstAttribute="centerY" secondItem="emh-4q-DBj" secondAttribute="centerY" id="cto-2o-Ahq"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="yUp-nw-bMu">
+                                                    <rect key="frame" x="89" y="0.0" width="190" height="84"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gVv-0Z-etC">
+                                                            <rect key="frame" x="0.0" y="19" width="190" height="46"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-2W-LmE" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="23"/>
+                                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Administrative Assistant" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SFu-Yl-CAd" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28" width="190" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="gVv-0Z-etC" secondAttribute="trailing" id="KUa-md-wYD"/>
+                                                        <constraint firstItem="gVv-0Z-etC" firstAttribute="leading" secondItem="yUp-nw-bMu" secondAttribute="leading" id="bep-cK-CGi"/>
+                                                        <constraint firstItem="gVv-0Z-etC" firstAttribute="centerY" secondItem="yUp-nw-bMu" secondAttribute="centerY" id="myM-fH-F2p"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lk-eL-kGf">
+                                                    <rect key="frame" x="294" y="0.0" width="80" height="84"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7o-HS-vNm" customClass="ThemeBlackBgWhiteTextButton" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="25.5" width="80" height="33"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="qdu-br-1b3"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                            <state key="normal" title="Unblock">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="T7o-HS-vNm" secondAttribute="trailing" id="r04-2g-pJN"/>
+                                                        <constraint firstItem="T7o-HS-vNm" firstAttribute="centerY" secondItem="2Lk-eL-kGf" secondAttribute="centerY" id="rqC-nn-lDx"/>
+                                                        <constraint firstItem="T7o-HS-vNm" firstAttribute="leading" secondItem="2Lk-eL-kGf" secondAttribute="leading" id="xTk-o6-ceR"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Ly3-Oq-3xP" secondAttribute="bottom" id="BGF-l1-4jf"/>
+                                        <constraint firstItem="Ly3-Oq-3xP" firstAttribute="leading" secondItem="QFc-Fw-3t4" secondAttribute="leading" constant="20" id="FOF-Fv-baT"/>
+                                        <constraint firstItem="Ly3-Oq-3xP" firstAttribute="top" secondItem="QFc-Fw-3t4" secondAttribute="top" id="LUn-7J-zb1"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ly3-Oq-3xP" secondAttribute="trailing" constant="20" id="RRm-Lz-vvd"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="avatar" destination="syc-Ea-5Gg" id="igI-hc-pAV"/>
+                                    <outlet property="infoLabel" destination="SFu-Yl-CAd" id="dLs-Kf-Y6E"/>
+                                    <outlet property="nameLabel" destination="aWc-2W-LmE" id="m3N-o5-43f"/>
+                                    <outlet property="unblock" destination="T7o-HS-vNm" id="AXV-ro-c6i"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bVb-GV-wdQ" id="LOh-Bx-AqS"/>
+                            <outlet property="delegate" destination="bVb-GV-wdQ" id="KvP-Pf-J4I"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Blacklist" id="h6Y-Pr-DWL">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="3oB-cw-L5t" customClass="ThemeBarButton" customModule="CupidLove" customModuleProvider="target">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backPressed:" destination="bVb-GV-wdQ" id="yZc-Om-tv1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pY6-KZ-T8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="477"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f4R-m3-EpT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="32M-u4-LMX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Cq-YD-6bI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nBz-Ed-sTh" kind="relationship" relationship="rootViewController" id="dAg-O7-GVV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fB-Xd-icw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091" y="-1124"/>
+        </scene>
+        <!--FeedbackViewController-->
+        <scene sceneID="J2W-Go-Uv4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feedback" referencedIdentifier="FeedbackViewController" id="sXi-gj-lv8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zSf-rS-dtH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zsr-9j-8Hq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="23"/>
+        </scene>
+        <!--Likes Users-->
+        <scene sceneID="hmJ-2h-7Sq">
+            <objects>
+                <viewController storyboardIdentifier="MyLikedUsersViewController" title="Likes Users" id="Awe-ae-NjX" customClass="MyLikedUsersViewController" customModule="CupidLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ANV-ld-p8R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zy9-82-2Ve">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="22" minimumInteritemSpacing="10" id="ynA-tS-UFT">
+                                    <size key="itemSize" width="150" height="232"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="25" minY="15" maxX="25" maxY="15"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecommendationCell" id="QER-xa-WDR" customClass="RecommendationCell" customModule="CupidLove" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="15" width="150" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="232"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOZ-AM-STn" customClass="ThemeRoundedBackView" customModule="CupidLove" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="232"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustration_male" translatesAutoresizingMaskIntoConstraints="NO" id="bw2-n8-aK2" customClass="URLImageView" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="232"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kpE-h8-heU" customClass="ThemePinkImageView" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="115" y="11.5" width="25" height="18.5"/>
+                                                            <color key="tintColor" red="0.94509803920000002" green="0.42745098040000001" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="kpE-h8-heU" secondAttribute="height" multiplier="6:5" id="Uh3-De-htv"/>
+                                                                <constraint firstAttribute="width" constant="25" id="iuT-ea-xe6"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="or1-FG-0qu" customClass="RoundedView" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="161" width="150" height="71"/>
+                                                            <subviews>
+                                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z55-QP-yAI" customClass="DynamicBlurView" customModule="DynamicBlurView">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="71"/>
+                                                                    <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="J8N-88-NBn">
+                                                                    <rect key="frame" x="8" y="11" width="134" height="55"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="[Firstname], [age]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By7-5B-U1g" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="134" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="[Town/City], [distance] km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoS-eT-uJr" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="23" width="134" height="13.5"/>
+                                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="[Job Title]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKv-mN-5q4" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="41.5" width="134" height="13.5"/>
+                                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="J8N-88-NBn" secondAttribute="trailing" constant="8" id="1kK-QC-K4V"/>
+                                                                <constraint firstItem="J8N-88-NBn" firstAttribute="top" secondItem="or1-FG-0qu" secondAttribute="top" constant="11" id="3JS-Fe-DnH"/>
+                                                                <constraint firstItem="z55-QP-yAI" firstAttribute="leading" secondItem="or1-FG-0qu" secondAttribute="leading" id="O7i-Lu-ogH"/>
+                                                                <constraint firstAttribute="trailing" secondItem="z55-QP-yAI" secondAttribute="trailing" id="PRV-y2-IEB"/>
+                                                                <constraint firstAttribute="bottom" secondItem="J8N-88-NBn" secondAttribute="bottom" constant="5" id="Pg6-fA-Hr9"/>
+                                                                <constraint firstAttribute="bottom" secondItem="z55-QP-yAI" secondAttribute="bottom" id="VEG-vz-KEZ"/>
+                                                                <constraint firstItem="z55-QP-yAI" firstAttribute="top" secondItem="or1-FG-0qu" secondAttribute="top" id="a0U-Zj-zau"/>
+                                                                <constraint firstItem="J8N-88-NBn" firstAttribute="leading" secondItem="or1-FG-0qu" secondAttribute="leading" constant="8" id="enn-8D-Ri8"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="kpE-h8-heU" secondAttribute="trailing" constant="10" id="1Xw-wX-1nN"/>
+                                                        <constraint firstAttribute="trailing" secondItem="or1-FG-0qu" secondAttribute="trailing" id="FV0-oe-MG5"/>
+                                                        <constraint firstItem="kpE-h8-heU" firstAttribute="top" secondItem="bw2-n8-aK2" secondAttribute="top" constant="10" id="K78-u7-TBU"/>
+                                                        <constraint firstItem="bw2-n8-aK2" firstAttribute="leading" secondItem="XOZ-AM-STn" secondAttribute="leading" id="U5v-Xn-JTb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="or1-FG-0qu" secondAttribute="bottom" id="bdP-VM-jPL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="bw2-n8-aK2" secondAttribute="trailing" id="dZt-tu-Jr2"/>
+                                                        <constraint firstAttribute="bottom" secondItem="bw2-n8-aK2" secondAttribute="bottom" id="ms6-4r-1oD"/>
+                                                        <constraint firstItem="or1-FG-0qu" firstAttribute="leading" secondItem="XOZ-AM-STn" secondAttribute="leading" id="ufJ-m8-cIW"/>
+                                                        <constraint firstItem="bw2-n8-aK2" firstAttribute="top" secondItem="XOZ-AM-STn" secondAttribute="top" id="wFi-9l-Nsa"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="XOZ-AM-STn" secondAttribute="bottom" id="Ch7-LE-djJ"/>
+                                            <constraint firstItem="XOZ-AM-STn" firstAttribute="leading" secondItem="QER-xa-WDR" secondAttribute="leading" id="tec-mR-4ez"/>
+                                            <constraint firstAttribute="trailing" secondItem="XOZ-AM-STn" secondAttribute="trailing" id="xWz-dX-Ryo"/>
+                                            <constraint firstItem="XOZ-AM-STn" firstAttribute="top" secondItem="QER-xa-WDR" secondAttribute="top" id="xpA-9j-Z42"/>
+                                        </constraints>
+                                        <size key="customSize" width="150" height="232"/>
+                                        <connections>
+                                            <outlet property="blurView" destination="z55-QP-yAI" id="JzX-wx-5E4"/>
+                                            <outlet property="container" destination="XOZ-AM-STn" id="NWA-Jr-fO6"/>
+                                            <outlet property="heartIcon" destination="kpE-h8-heU" id="MY6-Jm-Es3"/>
+                                            <outlet property="jobTitleLabel" destination="EKv-mN-5q4" id="dez-H4-SCi"/>
+                                            <outlet property="locationLabel" destination="aoS-eT-uJr" id="fPB-wI-i2n"/>
+                                            <outlet property="nameLabel" destination="By7-5B-U1g" id="qEn-wJ-sKR"/>
+                                            <outlet property="profileImage" destination="bw2-n8-aK2" id="h4z-72-Kqp"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Awe-ae-NjX" id="4ep-77-46i"/>
+                                    <outlet property="delegate" destination="Awe-ae-NjX" id="ZA3-m0-1hU"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uzJ-XY-bie"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uzJ-XY-bie" firstAttribute="bottom" secondItem="Zy9-82-2Ve" secondAttribute="bottom" id="Mnm-vu-cyy"/>
+                            <constraint firstItem="Zy9-82-2Ve" firstAttribute="leading" secondItem="uzJ-XY-bie" secondAttribute="leading" id="TwE-Lq-0GF"/>
+                            <constraint firstItem="Zy9-82-2Ve" firstAttribute="top" secondItem="uzJ-XY-bie" secondAttribute="top" id="Wha-oW-tAC"/>
+                            <constraint firstItem="uzJ-XY-bie" firstAttribute="trailing" secondItem="Zy9-82-2Ve" secondAttribute="trailing" id="rU5-IG-zBY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Likes" id="Yet-jp-gEP">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="7WT-f2-JS3" customClass="ThemeBarButton" customModule="CupidLove" customModuleProvider="target">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Zy9-82-2Ve" id="Diy-v2-npO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G47-EH-72u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162" y="1162"/>
+        </scene>
+        <!--Liked/Visited Me-->
+        <scene sceneID="aE8-tW-yLN">
+            <objects>
+                <viewController storyboardIdentifier="MyLikesRootViewController" title="Liked/Visited Me" id="YK3-BG-mY6" customClass="MyLikesRootViewController" customModule="CupidLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AJX-mF-I0h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k4r-wz-1Lv" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ImB-yv-uAV"/>
+                                </constraints>
+                                <inset key="scrollIndicatorInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MVW-h6-GSI">
+                                    <size key="itemSize" width="40" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MN3-6A-VtR">
+                                <rect key="frame" x="0.0" y="132" width="414" height="730"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lgd-SQ-G7S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k4r-wz-1Lv" firstAttribute="top" secondItem="lgd-SQ-G7S" secondAttribute="top" id="VPy-SY-3sH"/>
+                            <constraint firstItem="lgd-SQ-G7S" firstAttribute="trailing" secondItem="MN3-6A-VtR" secondAttribute="trailing" id="eqN-ah-RR1"/>
+                            <constraint firstItem="MN3-6A-VtR" firstAttribute="top" secondItem="k4r-wz-1Lv" secondAttribute="bottom" id="hkw-BS-zJT"/>
+                            <constraint firstItem="k4r-wz-1Lv" firstAttribute="leading" secondItem="lgd-SQ-G7S" secondAttribute="leading" id="iOG-gB-Hma"/>
+                            <constraint firstItem="lgd-SQ-G7S" firstAttribute="trailing" secondItem="k4r-wz-1Lv" secondAttribute="trailing" id="qPy-jh-AX9"/>
+                            <constraint firstItem="lgd-SQ-G7S" firstAttribute="bottom" secondItem="MN3-6A-VtR" secondAttribute="bottom" id="s0D-Lf-G1V"/>
+                            <constraint firstItem="MN3-6A-VtR" firstAttribute="leading" secondItem="lgd-SQ-G7S" secondAttribute="leading" id="zFz-S5-zmt"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="My Likes" id="ABQ-QF-bGG">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="eV1-0I-NYL" customClass="ThemeBarButton" customModule="CupidLove" customModuleProvider="target">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backPressed:" destination="YK3-BG-mY6" id="89L-eo-8DI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="k4r-wz-1Lv" id="gH9-EK-XGQ"/>
+                        <outlet property="containerView" destination="MN3-6A-VtR" id="A2s-5Z-nO8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sex-s6-nCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="1162"/>
+        </scene>
+        <!--Likes Cupids-->
+        <scene sceneID="6JZ-Rg-OPX">
+            <objects>
+                <viewController storyboardIdentifier="MyLikedCupidsViewController" title="Likes Cupids" id="klj-tT-1rp" customClass="MyLikedCupidsViewController" customModule="CupidLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Y9-Iz-bEH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2mp-Hj-uqa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="22" minimumInteritemSpacing="10" id="yiC-VG-Gdt">
+                                    <size key="itemSize" width="150" height="232"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="25" minY="15" maxX="25" maxY="15"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecommendationCell" id="9pg-xC-8Vo" customClass="RecommendationCell" customModule="CupidLove" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="15" width="150" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="232"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUK-Kw-Zql" customClass="ThemeRoundedBackView" customModule="CupidLove" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="232"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustration_male" translatesAutoresizingMaskIntoConstraints="NO" id="r3y-WL-lTd" customClass="URLImageView" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="232"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wuU-6l-sk7" customClass="ThemePinkImageView" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="115" y="11.5" width="25" height="18.5"/>
+                                                            <color key="tintColor" red="0.94509803920000002" green="0.42745098040000001" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="25" id="roU-xc-gUn"/>
+                                                                <constraint firstAttribute="width" secondItem="wuU-6l-sk7" secondAttribute="height" multiplier="6:5" id="yjd-kn-aQZ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LG4-I5-uoP" customClass="RoundedView" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="161" width="150" height="71"/>
+                                                            <subviews>
+                                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3VH-Pi-h1G" customClass="DynamicBlurView" customModule="DynamicBlurView">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="71"/>
+                                                                    <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </view>
+                                                                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ovp-Ae-eyD">
+                                                                    <rect key="frame" x="8" y="11" width="134" height="55"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="[Firstname], [age]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ0-QU-ZJd" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="134" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="[Town/City], [distance] km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT0-Yx-cDs" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="23" width="134" height="13.5"/>
+                                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="[Job Title]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsE-et-Uu0" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="41.5" width="134" height="13.5"/>
+                                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="3VH-Pi-h1G" secondAttribute="trailing" id="0wG-bP-LZH"/>
+                                                                <constraint firstAttribute="bottom" secondItem="3VH-Pi-h1G" secondAttribute="bottom" id="Av9-pY-gdT"/>
+                                                                <constraint firstItem="ovp-Ae-eyD" firstAttribute="leading" secondItem="LG4-I5-uoP" secondAttribute="leading" constant="8" id="JvO-Jw-Btn"/>
+                                                                <constraint firstItem="3VH-Pi-h1G" firstAttribute="leading" secondItem="LG4-I5-uoP" secondAttribute="leading" id="VT0-sv-RJy"/>
+                                                                <constraint firstItem="3VH-Pi-h1G" firstAttribute="top" secondItem="LG4-I5-uoP" secondAttribute="top" id="ckA-UH-yWs"/>
+                                                                <constraint firstAttribute="bottom" secondItem="ovp-Ae-eyD" secondAttribute="bottom" constant="5" id="fu2-gs-oMP"/>
+                                                                <constraint firstItem="ovp-Ae-eyD" firstAttribute="top" secondItem="LG4-I5-uoP" secondAttribute="top" constant="11" id="kav-2c-hF9"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ovp-Ae-eyD" secondAttribute="trailing" constant="8" id="sal-FR-CjE"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="wuU-6l-sk7" secondAttribute="trailing" constant="10" id="839-Ku-OFC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="LG4-I5-uoP" secondAttribute="trailing" id="L9Z-rL-pHx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="r3y-WL-lTd" secondAttribute="bottom" id="Ltx-6w-cda"/>
+                                                        <constraint firstItem="wuU-6l-sk7" firstAttribute="top" secondItem="r3y-WL-lTd" secondAttribute="top" constant="10" id="NYL-e5-Tas"/>
+                                                        <constraint firstItem="LG4-I5-uoP" firstAttribute="leading" secondItem="qUK-Kw-Zql" secondAttribute="leading" id="UF1-jX-WPz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="r3y-WL-lTd" secondAttribute="trailing" id="WMB-NG-eh7"/>
+                                                        <constraint firstAttribute="bottom" secondItem="LG4-I5-uoP" secondAttribute="bottom" id="apO-TQ-KKl"/>
+                                                        <constraint firstItem="r3y-WL-lTd" firstAttribute="leading" secondItem="qUK-Kw-Zql" secondAttribute="leading" id="cEd-uz-osU"/>
+                                                        <constraint firstItem="r3y-WL-lTd" firstAttribute="top" secondItem="qUK-Kw-Zql" secondAttribute="top" id="s8P-cP-PPS"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="qUK-Kw-Zql" secondAttribute="bottom" id="V1g-7D-Zpr"/>
+                                            <constraint firstItem="qUK-Kw-Zql" firstAttribute="top" secondItem="9pg-xC-8Vo" secondAttribute="top" id="rCf-QV-9yN"/>
+                                            <constraint firstItem="qUK-Kw-Zql" firstAttribute="leading" secondItem="9pg-xC-8Vo" secondAttribute="leading" id="srC-pf-a3b"/>
+                                            <constraint firstAttribute="trailing" secondItem="qUK-Kw-Zql" secondAttribute="trailing" id="xFD-TW-i7e"/>
+                                        </constraints>
+                                        <size key="customSize" width="150" height="232"/>
+                                        <connections>
+                                            <outlet property="blurView" destination="3VH-Pi-h1G" id="aPt-cg-3dl"/>
+                                            <outlet property="container" destination="qUK-Kw-Zql" id="FvD-9m-l1J"/>
+                                            <outlet property="heartIcon" destination="wuU-6l-sk7" id="EAo-VX-w66"/>
+                                            <outlet property="jobTitleLabel" destination="TsE-et-Uu0" id="Q1U-t9-tsh"/>
+                                            <outlet property="locationLabel" destination="gT0-Yx-cDs" id="tX9-bE-nfG"/>
+                                            <outlet property="nameLabel" destination="bJ0-QU-ZJd" id="5nb-7T-3E6"/>
+                                            <outlet property="profileImage" destination="r3y-WL-lTd" id="py4-LD-XgU"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="klj-tT-1rp" id="d8G-Zo-BeR"/>
+                                    <outlet property="delegate" destination="klj-tT-1rp" id="dlA-Gs-DHd"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MyD-Dm-8IQ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2mp-Hj-uqa" firstAttribute="leading" secondItem="MyD-Dm-8IQ" secondAttribute="leading" id="6se-Qs-ahH"/>
+                            <constraint firstItem="MyD-Dm-8IQ" firstAttribute="trailing" secondItem="2mp-Hj-uqa" secondAttribute="trailing" id="Hhc-gB-rtq"/>
+                            <constraint firstItem="2mp-Hj-uqa" firstAttribute="top" secondItem="MyD-Dm-8IQ" secondAttribute="top" id="PPk-rJ-1J1"/>
+                            <constraint firstItem="MyD-Dm-8IQ" firstAttribute="bottom" secondItem="2mp-Hj-uqa" secondAttribute="bottom" id="z7i-fP-r7L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Likes" id="BKN-PW-RYA">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="gan-AL-y4U" customClass="ThemeBarButton" customModule="CupidLove" customModuleProvider="target">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="2mp-Hj-uqa" id="7O4-hv-STF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnC-N3-vof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="1162"/>
+        </scene>
+        <!--Invite-->
+        <scene sceneID="MoK-pe-6Xe">
+            <objects>
+                <viewController storyboardIdentifier="InviteCodeViewController" id="F38-kS-IMt" customClass="InviteCodeViewController" customModule="CupidLove" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ee6-wM-bbu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WnV-32-XKD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InviteCodeTableViewCell" id="rPJ-Gf-8rY" customClass="InviteCodeTableViewCell" customModule="CupidLove" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="684"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rPJ-Gf-8rY" id="LXj-u2-P72">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="684"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="x8O-1j-Mye">
+                                                    <rect key="frame" x="30" y="20" width="354" height="644"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HT-zg-xcJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="283"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustration_bigrose" translatesAutoresizingMaskIntoConstraints="NO" id="z70-kg-9r0" customClass="ThemeBlackImageView" customModule="CupidLove" customModuleProvider="target">
+                                                                    <rect key="frame" x="35.5" y="0.0" width="283" height="283"/>
+                                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="z70-kg-9r0" secondAttribute="height" multiplier="1:1" id="7C4-Bh-5aq"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="z70-kg-9r0" firstAttribute="width" secondItem="9HT-zg-xcJ" secondAttribute="width" multiplier="0.8" id="6GC-Kn-ueP"/>
+                                                                <constraint firstAttribute="bottom" secondItem="z70-kg-9r0" secondAttribute="bottom" id="R9C-u3-ldi"/>
+                                                                <constraint firstItem="z70-kg-9r0" firstAttribute="centerX" secondItem="9HT-zg-xcJ" secondAttribute="centerX" id="oIy-ty-rXh"/>
+                                                                <constraint firstItem="z70-kg-9r0" firstAttribute="top" secondItem="9HT-zg-xcJ" secondAttribute="top" id="xQB-jJ-dd1"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Invite Friends to join" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcD-Bb-p6Z" customClass="ThemePinkLabel" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="303" width="354" height="76"/>
+                                                            <fontDescription key="fontDescription" name="Aclonica-Regular" family="Aclonica" pointSize="35"/>
+                                                            <color key="textColor" red="0.76862745099999996" green="0.32549019610000002" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Love is right around the corner. Invite your friend, here is a match for them!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya9-Pa-iQx" customClass="ThemeBlackTextLabel" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="399" width="354" height="41"/>
+                                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="axd-ch-JYu">
+                                                            <rect key="frame" x="0.0" y="460" width="354" height="48"/>
+                                                            <subviews>
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rhn-hh-OUa" customClass="ThemeBorderTextField" customModule="CupidLove" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="296" height="48"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="48" id="xLH-5C-ApK"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                                </textField>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFT-Pv-mkH" customClass="ThemePinkButton" customModule="CupidLove" customModuleProvider="target">
+                                                                    <rect key="frame" x="306" y="0.0" width="48" height="48"/>
+                                                                    <color key="backgroundColor" white="0.94999999999999996" alpha="0.69803921568627447" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="UFT-Pv-mkH" secondAttribute="height" multiplier="1:1" id="zzG-jr-tKp"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" systemColor="systemPinkColor"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title=" " image="doc.on.clipboard.fill" catalog="system"/>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lls-48-PCV" customClass="ThemeRoundedPinkButton" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="528" width="354" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="48" id="WjF-pv-Lmu"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Invite by email">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05F-8v-ElN" customClass="ThemeRoundedPinkButton" customModule="CupidLove" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="596" width="354" height="48"/>
+                                                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="48" id="ktQ-By-xee"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Invite by SMS">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="x8O-1j-Mye" firstAttribute="top" secondItem="LXj-u2-P72" secondAttribute="top" constant="20" id="Fkt-xl-sKL"/>
+                                                <constraint firstAttribute="trailing" secondItem="x8O-1j-Mye" secondAttribute="trailing" constant="30" id="Oap-F0-Ggh"/>
+                                                <constraint firstItem="x8O-1j-Mye" firstAttribute="leading" secondItem="LXj-u2-P72" secondAttribute="leading" constant="30" id="gal-2r-p8K"/>
+                                                <constraint firstAttribute="bottom" secondItem="x8O-1j-Mye" secondAttribute="bottom" constant="20" id="yMG-yp-77Y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="codeField" destination="Rhn-hh-OUa" id="9gx-N7-nYg"/>
+                                            <outlet property="copyButton" destination="UFT-Pv-mkH" id="Gha-K5-Uac"/>
+                                            <outlet property="emailButton" destination="lls-48-PCV" id="NC3-1l-5R1"/>
+                                            <outlet property="smsButton" destination="05F-8v-ElN" id="2EG-4U-NY9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="F38-kS-IMt" id="J19-IP-Skk"/>
+                                    <outlet property="delegate" destination="F38-kS-IMt" id="ulk-3j-yq4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PdH-dK-qwZ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PdH-dK-qwZ" firstAttribute="trailing" secondItem="WnV-32-XKD" secondAttribute="trailing" id="U2H-5s-aLI"/>
+                            <constraint firstItem="WnV-32-XKD" firstAttribute="top" secondItem="PdH-dK-qwZ" secondAttribute="top" id="Uiv-bY-ctP"/>
+                            <constraint firstItem="WnV-32-XKD" firstAttribute="leading" secondItem="PdH-dK-qwZ" secondAttribute="leading" id="W4U-cJ-eEC"/>
+                            <constraint firstItem="PdH-dK-qwZ" firstAttribute="bottom" secondItem="WnV-32-XKD" secondAttribute="bottom" id="kRM-O4-0k8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Invite" id="6xy-QG-cy0">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="4nk-XU-7WU" customClass="ThemeBarButton" customModule="CupidLove" customModuleProvider="target">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backPressed:" destination="F38-kS-IMt" id="lx0-mG-hkK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="WnV-32-XKD" id="0CU-Pg-7W8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sw6-vB-SDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235" y="477"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="doc.on.clipboard.fill" catalog="system" width="116" height="128"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="illustration_bigrose" width="365.5" height="365"/>
+        <image name="illustration_bluemyaccount" width="365.5" height="162"/>
+        <image name="illustration_male" width="365.5" height="365"/>
+        <image name="illustration_myaccount" width="365.5" height="161.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
